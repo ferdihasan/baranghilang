@@ -29,6 +29,10 @@
                     <input type="datetime-local"  name="date" class="form-control" id="date" required >
                 </div>
                 <div class="mb-3">
+                    <label for="alamat" class="form-label">Alamat</label>
+                    <input type="text"  name="alamat" class="form-control" id="alamat" required >
+                </div>
+                <div class="mb-3">
                     <label for="description" class="form-label">Description</label>
                     <textarea type="text"  name="description" class="form-control" id="description" required ></textarea>
                 </div>

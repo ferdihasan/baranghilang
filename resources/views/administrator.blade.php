@@ -22,6 +22,7 @@
                         <td>Merek</td>
                         <td>Description</td>
                         <td>Jumlah</td>
+                        <td>Alamat</td>
                         <td>Bukti</td>
                         <td>Tanggal</td>
                         <td>Status</td>
@@ -37,6 +38,7 @@
                             <td>{{$barang->merek}}</td>
                             <td>{{$barang->description}}</td>
                             <td>{{$barang->jumlah}}</td>
+                            <td>{{$barang->alamat}}</td>
                             <td>{{$barang->bukti}}</td>
                             <td>{{$barang->date}}</td>
                             <td>{{$barang->status}}</td>

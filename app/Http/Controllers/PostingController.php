@@ -30,6 +30,7 @@ class PostingController extends Controller
         $merek = $request->merek;
         $description = $request->description;
         $jumlah = $request->jumlah;
+        $alamat = $request->alamat;
         $bukti = $request->bukti;
         $date = $request->date;
         $status = $request->status;
@@ -43,6 +44,7 @@ class PostingController extends Controller
             "merek" => $merek,
             "description" => $description,
             'jumlah' => $jumlah,
+            'alamat' => $alamat,
             'bukti' => $bukti,
             'date' => $date,
             'status' => $status,
@@ -91,8 +93,10 @@ class PostingController extends Controller
         $merek = $request->merek;
         $description = $request->description;
         $jumlah = $request->jumlah;
+        $alamat = $request->alamat;
         $bukti = $request->bukti;
         $date = $request->date;
+        $take_date = $request->takedate;
         $status = $request->status;
 
         $barang = Barang::find($req_id);
@@ -114,8 +118,10 @@ class PostingController extends Controller
             "merek" => $merek,
             "description" => $description,
             'jumlah' => $jumlah,
+            'alamat' => $alamat,
             'bukti' => $bukti,
             'date' => $date,
+            'take_date' => $take_date,
             'status' => $status,
             'image' => $image,
         ]);

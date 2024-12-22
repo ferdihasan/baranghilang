@@ -29,6 +29,10 @@
                     <input type="datetime-local"  name="date" class="form-control" id="date" required value="{{$barang->date}}">
                 </div>
                 <div class="mb-3">
+                    <label for="alamat" class="form-label">Alamat</label>
+                    <input type="text"  name="alamat" class="form-control" id="alamat" required value="{{$barang->alamat}}">
+                </div>
+                <div class="mb-3">
                     <label for="description" class="form-label">Description</label>
                     <textarea name="description" class="form-control" id="description"  defaultValue="{{$barang->description}}" required></textarea>
                 </div>
@@ -61,7 +65,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="takedate" class="form-label">Tanggal diambil</label>
-                    <input type="datetime-local"  name="takedate" class="form-control" id="takedate" <?= $barang->timedate !== null ? '' : 'readonly' ?> value="<?= $barang->takedate !== null ? $barang->takedate : ''?>">
+                    <input type="datetime-local"  name="takedate" class="form-control" id="takedate" <?= $barang->take_date !== null ? '' : 'readonly' ?> value="<?= $barang->take_date !== null ? $barang->take_date : ''?>">
                 </div>
                 <div class="mb-3">
                     <label for="image" class="form-label">Foto Barang</label>

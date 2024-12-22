@@ -31,7 +31,7 @@
 @endif
     @if (session()->has('berhasil_register'))
     <div class="alert alert-success alert-dismissible fade show alert-centered" role="alert">
-        <i class="bi bi-check-circle-fill"> </i>{{ session('loginSuccess') }}
+        <i class="bi bi-check-circle-fill"> </i>{{ session('berhasil_register') }}
         <button type="button" class="btn-close" data-bs-dismiss='alert' aria-label="Close"></button>
     </div>
 @endif
@@ -55,6 +55,10 @@
               <div class="d-flex justify-content-between">
                 <p class="card-title">Ditemukan oleh: </p>
                 <p class="card-title">{{$barang->user->name}}</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="card-title">Alamat: </p>
+                <p class="card-title">{{$barang->alamat}}</p>
               </div><hr>
               <p class="card-text">{{$barang->description}}</p>
             </div>

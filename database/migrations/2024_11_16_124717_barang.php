@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('category_id');
             $table->string('name');
             $table->string('merek');
+            $table->string('alamat');
             $table->longText('description');
             $table->string('jumlah');
             $table->string('bukti');
